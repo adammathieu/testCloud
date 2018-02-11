@@ -6,6 +6,8 @@ If bottle web server is running in a container, it should be launched on host 0.
 
 ## ngrock
 Simple exposing localhost server with https://ngrok.com/
-> ./ngrok http 80
-> create secure public url https://<random>.ngrok.io (free account get random URL)
-> Inspecting your traffic on localhost:4040
+```sh
+$ ./ngrok http 80
+> Create secure public url https://<random>.ngrok.io (free account get random URL)
+$ Inspecting your traffic on localhost:4040
+```
