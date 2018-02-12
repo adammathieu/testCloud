@@ -1,7 +1,13 @@
-from bottle import route, run
+from flask import Flask
+app = Flask(__name__)
 
-@route('/hello')
-def hello():
-    return "Hello World!"
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
 
-run(host='0.0.0.0', port=8080, debug=True)
+@app.route('/hellofrom/<whereareu>')
+def hello_world_from(whereareu):
+    return 'Hello, World from %s!' % whereareu
+
+if __name__ == '__main__':
+    app.run(debug=True,host='0.0.0.0')
