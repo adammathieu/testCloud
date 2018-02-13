@@ -14,6 +14,10 @@ $ ./ngrok http 80
 
 ## CI
 ### circleci
-Quite easy to follow tutorial in order to trigger build on a commit
-Even if I find the yml config file quite verbose.
-I found the CI really fast for creating env. I really appreciate the rebuild with ssh option.
+Quite easy to follow tutorial in order to trigger build on a commit.
+I find the yml config file very verbose.
+However the CI is really fast for running a build/tests. 
+The system of cache sure help. I really appreciate the rebuild with ssh option.
+### travis-ci
+Slower than circleci but the yml config file is so simple.
+Default dependencies and env management help keeping file simple.
