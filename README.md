@@ -2,7 +2,7 @@
 tiny web helloworld project to test cloud
 
 ## DOCKER
-If the flask web application is running in a container, it should be launched on host 0.0.0.0. localhost otherwise.
+If the flask web application is running in a container, it should be launched on host 0.0.0.0 to be exposed to the host.
 
 ## HTTP SERVER
 ### gunicorn
@@ -10,6 +10,7 @@ Run the flask web application with gunicorn is really simple:
 ```sh
 > gunicorn --bind 0.0.0.0:8080 hello:app
 ```
+gunicorn parameters can be added to a configuration file and passed as parameters.
 
 ## ngrock
 Simple exposing localhost server with https://ngrok.com/
